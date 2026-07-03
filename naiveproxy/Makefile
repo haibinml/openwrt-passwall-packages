@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=naiveproxy
-PKG_VERSION:=149.0.7827.114
+PKG_VERSION:=150.0.7871.63
 PKG_RELEASE:=1
 
 ARCH_PREBUILT:=$(ARCH_PACKAGES)
@@ -37,11 +37,11 @@ else ifeq ($(ARCH_PREBUILT),arm_arm926ej-s)
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a15_neon-vfpv4)
   PKG_HASH:=d74106a600a9a22dfb727b30753c6a97d22616a5db690d83ef9166a5288b776c
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a5_vfpv4)
-  PKG_HASH:=5a121b951bd4dbc19599fdfcde61249a1afc8cd492f290b782808297e987cfab
+  PKG_HASH:=f64ca5222ec7298643c412e08ac2316bf1250581c11f1ffa0258b13ad37d6210
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7)
   PKG_HASH:=a1e7cab958cc4912d65d00fc56144102d88792886bc4d3fc77fad2306ecb2d38
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7_neon-vfpv4)
-  PKG_HASH:=24bda5d57d206f91341be3cc7da6ab57342f2232b7e725295b1f928bcecc51ac
+  PKG_HASH:=3f559c5e0958798e020ce62a5810e71ee84566598c3f0ef2ab8eb0b85186c85e
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7_vfpv4)
   PKG_HASH:=13e20e649a226fbb879c1d571caa18bc40bdf27d90a1391172754bcb14ac6b74
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a8_vfpv3)
@@ -63,9 +63,9 @@ else ifeq ($(ARCH_PREBUILT),mipsel_mips32)
 else ifeq ($(ARCH_PREBUILT),riscv64)
   PKG_HASH:=f72aeda71c6da0b75ccf2a09f2a963e750aba9f18f7a849fd09bcbfa89514199
 else ifeq ($(ARCH_PREBUILT),x86)
-  PKG_HASH:=b3513fee31ec503a3835579d211f5d0aa70e2d46b17eda363d42841d7ea15552
+  PKG_HASH:=0c12e6fee7b6b8f94b0feb0aca5f5ba8930ad61e4bda43792a84791247c53d36
 else ifeq ($(ARCH_PREBUILT),x86_64)
-  PKG_HASH:=f1a1742f78f0b4b7fa36f8f4600598579b048da6c033c353633b396ec24c1bf2
+  PKG_HASH:=f817de82e88aba3cfe0a773816e2717c94dac050fb931055b3d6d5c1e75992bb
 else
   PKG_HASH:=dummy
 endif
